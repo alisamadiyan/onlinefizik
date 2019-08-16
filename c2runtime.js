@@ -22738,12 +22738,14 @@ cr.plugins_.Touch = function(runtime)
 }());
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
-	cr.plugins_.Browser,
 	cr.plugins_.Button,
+	cr.plugins_.Browser,
 	cr.plugins_.Mouse,
-	cr.plugins_.Text,
-	cr.plugins_.Touch,
 	cr.plugins_.Sprite,
+	cr.plugins_.Touch,
+	cr.plugins_.Text,
+	cr.system_object.prototype.cnds.OnLayoutStart,
+	cr.plugins_.Audio.prototype.acts.Play,
 	cr.system_object.prototype.cnds.EveryTick,
 	cr.plugins_.Button.prototype.acts.SetCSSStyle,
 	cr.plugins_.Button.prototype.cnds.OnClicked,
